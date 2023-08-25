@@ -31,7 +31,7 @@ def alphabetical_list(games)
     games.uniq.sort
 end
 
-print alphabetical_list(["dota", "dota", "Mario", "hola"])
+puts alphabetical_list(["dota", "dota", "Mario", "hola"])
 
 
 # method name: #lucky_number
@@ -87,10 +87,6 @@ pet_pun("cat")
 # hint: use Comparable#between?
 
 def twenty_first_century?(number)
-    if (number.between?(2001,2100))
-        true
-    else
-        false
-    end
+    number.between?(2001,2100)
 end
 puts twenty_first_century?(2022)
