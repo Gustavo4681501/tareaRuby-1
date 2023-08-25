@@ -10,7 +10,7 @@
 def ascii_translator(number)
     number.chr(Encoding::UTF_8)
 end
-
+print "Ejercicio #1: "
 puts ascii_translator(65)
 
 
@@ -21,6 +21,7 @@ puts ascii_translator(65)
 def common_sports(current_sports, favorite_sports)
     current_sports.intersection(favorite_sports)
 end
+print "Ejercicio #2: "
 puts common_sports(["futbol","basket","golf"],["basket","golf","baseball"])
 # method name: #alphabetical_list
 # parameter: games (an array)
@@ -30,7 +31,7 @@ puts common_sports(["futbol","basket","golf"],["basket","golf","baseball"])
 def alphabetical_list(games)
     games.uniq.sort
 end
-
+print "Ejercicio #3: "
 puts alphabetical_list(["dota", "dota", "Mario", "hola"])
 
 
@@ -41,7 +42,7 @@ puts alphabetical_list(["dota", "dota", "Mario", "hola"])
 def lucky_number(number=7)
     "Today's lucky number is #{number}"
 end
-
+print "Ejercicio #4: "
 puts lucky_number(9)
 # method name: #ascii_code
 # parameter: character (a string)
@@ -56,7 +57,7 @@ def ascii_code(character)
     end
     character.ord
 end
-
+print "Ejercicio #5: "
 puts ascii_code("h")
 
 # method name: #pet_pun
@@ -78,7 +79,7 @@ def pet_pun(animal)
         puts "I think #{animal} have pet-tential!"
     end
 end
-
+print "Ejercicio #6: "
 pet_pun("cat")
 
 # method name: #twenty_first_century?
@@ -89,4 +90,5 @@ pet_pun("cat")
 def twenty_first_century?(number)
     number.between?(2001,2100)
 end
+print "Ejercicio #7: "
 puts twenty_first_century?(2022)
